@@ -28,3 +28,13 @@ footer a{
     text-decoration: none; 
     color: white;
 }
+
+div{
+    text-align: center;
+    padding: 10px;
+}
+
+div#msg{
+    font-size: 1.3em;
+    font-weight: 700;
+}
