@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelo</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contagem</h1>
+    </header>
+
+    <section>
+        <div id="form">
+            <div class="preencher">
+                <label for="numero1">Início: </label>
+                <input type="number" name="inicio" id="inicio">
+            </div>
+            <div class="preencher">
+                <label for="fim">Fim: </label>
+                <input type="number" name="fim" id="fim">
+            </div>
+            <div class="preencher">
+                <label for="passo">Passo: </label>
+                <input type="number" name="passo" id="passo">
+            </div>
+            <div class="preencher">
+                <input type="submit" value="Contar" onclick="contar();validar()">
+            </div>
+        </div>
+        <div id="saida">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://github.com/matheusbiesdorf">Matheus Biesdorf</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
