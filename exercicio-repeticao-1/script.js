@@ -1,20 +1,33 @@
 function contar(){
-    var inicio = parseInt(document.getElementById("inicio").value);
-    var fim = parseInt(document.getElementById("fim").value);
-    var passo = parseInt(document.getElementById("passo").value);
+
+    var inicio = document.getElementById("inicio");
+    var fim = document.getElementById("fim");
+    var passo = document.getElementById("passo");
     var saida = document.getElementById("saida");
-    saida.innerHTML = "";
 
-    if(passo <= 0){
-        passo = 1
+    if(inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
+        saida.innerHTML = "Impossível contar"
+        window.alert("Não deixe dados em branco!")
+    }else{
+        saida.innerHTML = 'Contando: <br>'
+        let i = Number(inicio.value)
+        let f = Number(fim.value)
+        let p = Number(passo.value)
+
+        if(p <= 0){
+            window.alert("Passo inválido. Considerando passo = 1")
+            p = 1
+        }
+
+        if(i<f){
+            for(let c=i ; c<=f ; c+=p){
+                saida.innerHTML += `${c} \u{1F449}`
+            }
+        }else{
+            for(let c=i ; c>=f ; c-=p){
+                saida.innerHTML += `${c} \u{1F449}`
+            }
+        }
+        saida.innerHTML += `\u{1F3C1}`
     }
-    if(inicio > fim){
-        alert("O início não pode ser menor do que o fim")
-    }
-    
-    for (var i = inicio; i <= fim; i += passo) {
-        saida.innerHTML += i + " ";
-    }
-    saida.innerHTML += "FIM";
 }
-
