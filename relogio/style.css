@@ -1,0 +1,56 @@
+@charset "UFT-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(130deg , lightgrey, grey , darkgrey);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#relogio{
+    height: 150px;
+    width: 95%;
+    min-width: 400px;
+    max-width: 480px;
+
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.visor{
+    height: 100%;
+    width: 33.33%;
+
+    font-weight: 700;
+    color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#horas , #minutos , #segundos{
+    font-size: 4em;
+}
+
+.texto_visor{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
