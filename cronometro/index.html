@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="cronometro">
+
+        <div class="numeros">
+            <span id="horas">00</span>
+            <span class="tempo">horas</span>
+        </div>
+
+        <div class="numeros">
+            <span id="minutos">00</span>
+            <span class="tempo">minutos</span>
+        </div>
+
+        <div class="numeros">
+            <span id="segundos">00</span>
+            <span class="tempo">segundos</span>
+        </div>
+
+        <div class="numeros">
+            <span id="milissegundos">000</span>
+            <span class="tempo">milissegundos</span>
+        </div>
+
+    </div>
+
+    <div id="botoes">
+        <button id="botao_start" onclick="start()" onmouseover="mudaCorStart()" onmouseout="retornaCorStart()"> Start </button>
+        <button id="botao_pause" onclick="pause()" onmouseover="mudaCorPause()" onmouseout="retornaCorPause()"> Pause </button>
+        <button id="botao_reset" onclick="reset()" onmouseover="mudaCorReset()" onmouseout="retornaCorReset()"> Reset </button>
+    </div>
+
+</body>
+</html>
