@@ -8,7 +8,7 @@ function time(){
 
     document.getElementById("horas").innerText = horas;
     document.getElementById("minutos").innerText = minutos;
-    document.getElementById("segundos").innerText = segundos;
+    document.getElementById("segundos").innerText = segundos.toString().padStart(2 , '0');
 
 }
 
